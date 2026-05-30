@@ -22,11 +22,11 @@ export default function Promotions({ onBookClick }: PromotionsProps) {
   ]
 
   return (
-    <section id="promotions" className="bg-white py-16 dark:bg-charcoal-light sm:py-20">
+    <section id="promotions" className="bg-charcoal-light py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">Special Offers</p>
-          <h2 className="mt-3 font-display text-2xl font-bold text-charcoal dark:text-cream sm:text-3xl">
+          <h2 className="mt-3 font-display text-2xl font-bold text-cream sm:text-3xl">
             Current Promotions
           </h2>
         </div>
@@ -35,15 +35,15 @@ export default function Promotions({ onBookClick }: PromotionsProps) {
           {promos.map((promo) => (
             <article
               key={promo.title}
-              className="relative overflow-hidden rounded-2xl border border-charcoal/10 bg-charcoal/5 p-6 dark:border-white/10 dark:bg-white/5"
+              className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6"
             >
               <span className="inline-block rounded-full bg-gold/10 px-3 py-1 text-xs font-semibold text-gold">
                 {promo.badge}
               </span>
-              <h3 className="mt-4 font-display text-lg font-bold text-charcoal dark:text-cream">
+              <h3 className="mt-4 font-display text-lg font-bold text-cream">
                 {promo.title}
               </h3>
-              <p className="mt-2 text-sm text-charcoal/70 dark:text-cream/70">{promo.description}</p>
+              <p className="mt-2 text-sm text-cream/70">{promo.description}</p>
             </article>
           ))}
         </div>

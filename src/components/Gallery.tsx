@@ -10,7 +10,7 @@ export default function Gallery() {
       : galleryItems.filter((item) => item.category === activeFilter)
 
   return (
-    <section id="gallery" className="bg-charcoal-mid py-20 dark:bg-charcoal sm:py-28">
+    <section id="gallery" className="bg-charcoal-mid py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">Our Work</p>

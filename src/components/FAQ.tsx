@@ -5,7 +5,7 @@ export default function FAQ() {
   const [openId, setOpenId] = useState<string | null>(null)
 
   return (
-    <section id="faq" className="bg-charcoal-mid py-20 dark:bg-charcoal sm:py-28">
+    <section id="faq" className="bg-charcoal-mid py-20 sm:py-28">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">FAQ</p>

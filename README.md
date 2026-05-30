@@ -12,7 +12,6 @@ A modern, mobile-first website redesign for Nick's Barbershop in Queens, NY. Bui
 - Barber team profiles with booking CTAs
 - Filterable photo gallery
 - Customer reviews and testimonials
-- Dark mode support
 - FAQ, gift cards, loyalty program, and promotions sections
 - Interactive map and click-to-call
 - Sticky mobile booking button

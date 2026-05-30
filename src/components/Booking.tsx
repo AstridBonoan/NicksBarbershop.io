@@ -100,7 +100,7 @@ export default function Booking({ preselectedService, preselectedBarber }: Booki
   }
 
   return (
-    <section id="booking" className="bg-charcoal-mid py-20 dark:bg-charcoal sm:py-28">
+    <section id="booking" className="bg-charcoal-mid py-20 sm:py-28">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">Book Online</p>

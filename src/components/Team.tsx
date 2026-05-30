@@ -6,14 +6,14 @@ interface TeamProps {
 
 export default function Team({ onBookClick }: TeamProps) {
   return (
-    <section id="team" className="bg-white py-20 dark:bg-charcoal-light sm:py-28">
+    <section id="team" className="bg-charcoal-light py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">The Crew</p>
-          <h2 className="mt-3 font-display text-3xl font-bold text-charcoal dark:text-cream sm:text-4xl">
+          <h2 className="mt-3 font-display text-3xl font-bold text-cream sm:text-4xl">
             Meet Your Barbers
           </h2>
-          <p className="mt-4 text-charcoal/60 dark:text-cream/60">
+          <p className="mt-4 text-cream/60">
             The team behind every cut, every style, and every good vibe at Nick&apos;s.
           </p>
         </div>
@@ -22,7 +22,7 @@ export default function Team({ onBookClick }: TeamProps) {
           {barbers.map((barber) => (
             <article
               key={barber.id}
-              className="group overflow-hidden rounded-2xl border border-charcoal/10 bg-charcoal/5 dark:border-white/10 dark:bg-white/5"
+              className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5"
             >
               <div className="relative aspect-[4/5] overflow-hidden">
                 <img
@@ -38,19 +38,19 @@ export default function Team({ onBookClick }: TeamProps) {
                 </div>
               </div>
               <div className="p-5">
-                <p className="text-sm leading-relaxed text-charcoal/70 dark:text-cream/70">{barber.bio}</p>
+                <p className="text-sm leading-relaxed text-cream/70">{barber.bio}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {barber.specialties.map((s) => (
                     <span
                       key={s}
-                      className="rounded-full bg-gold/10 px-3 py-1 text-xs font-medium text-gold-dark dark:text-gold"
+                      className="rounded-full bg-gold/10 px-3 py-1 text-xs font-medium text-gold"
                     >
                       {s}
                     </span>
                   ))}
                 </div>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="text-xs font-medium text-charcoal/50 dark:text-cream/50">
+                  <span className="text-xs font-medium text-cream/50">
                     {barber.experience}
                   </span>
                   <button

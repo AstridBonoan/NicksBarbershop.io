@@ -2,7 +2,7 @@ import { shopInfo } from '../data/faq'
 
 export default function About() {
   return (
-    <section id="about" className="bg-white py-20 dark:bg-charcoal-light sm:py-28">
+    <section id="about" className="bg-charcoal-light py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="relative">
@@ -28,10 +28,10 @@ export default function About() {
 
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">Our Story</p>
-            <h2 className="mt-3 font-display text-3xl font-bold text-charcoal dark:text-cream sm:text-4xl">
+            <h2 className="mt-3 font-display text-3xl font-bold text-cream sm:text-4xl">
               More Than a Haircut — It&apos;s a Tradition
             </h2>
-            <div className="mt-6 space-y-4 text-base leading-relaxed text-charcoal/70 dark:text-cream/70">
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-cream/70">
               <p>
                 Nick&apos;s Barbershop started with a simple belief: every person
                 deserves to walk out feeling like the best version of themselves.
@@ -61,10 +61,10 @@ export default function About() {
               ].map((item) => (
                 <div
                   key={item.label}
-                  className="rounded-xl border border-charcoal/10 bg-charcoal/5 p-4 dark:border-white/10 dark:bg-white/5"
+                  className="rounded-xl border border-white/10 bg-white/5 p-4"
                 >
                   <span className="text-2xl" aria-hidden="true">{item.icon}</span>
-                  <p className="mt-2 text-sm font-medium text-charcoal dark:text-cream">{item.label}</p>
+                  <p className="mt-2 text-sm font-medium text-cream">{item.label}</p>
                 </div>
               ))}
             </div>

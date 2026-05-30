@@ -2,16 +2,16 @@ import { shopInfo } from '../data/faq'
 
 export default function GiftCards() {
   return (
-    <section id="gift-cards" className="bg-white py-16 dark:bg-charcoal-light sm:py-20">
+    <section id="gift-cards" className="bg-charcoal-light py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="overflow-hidden rounded-2xl border border-charcoal/10 bg-gradient-to-br from-gold/10 to-gold/5 dark:border-white/10">
+        <div className="overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-gold/10 to-gold/5">
           <div className="grid items-center gap-8 p-8 sm:p-12 lg:grid-cols-2">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">Gift Cards</p>
-              <h2 className="mt-3 font-display text-2xl font-bold text-charcoal dark:text-cream sm:text-3xl">
+              <h2 className="mt-3 font-display text-2xl font-bold text-cream sm:text-3xl">
                 The Perfect Gift for Any Occasion
               </h2>
-              <p className="mt-4 text-charcoal/70 dark:text-cream/70">
+              <p className="mt-4 text-cream/70">
                 Give the gift of a fresh cut. Nick&apos;s Barbershop gift certificates are
                 available in any amount — birthdays, holidays, Father&apos;s Day, or just
                 because.

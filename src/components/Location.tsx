@@ -2,12 +2,12 @@ import { shopInfo } from '../data/faq'
 
 export default function Location() {
   return (
-    <section id="contact" className="bg-white py-20 dark:bg-charcoal-light sm:py-28">
+    <section id="contact" className="bg-charcoal-light py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">Find Us</p>
-            <h2 className="mt-3 font-display text-3xl font-bold text-charcoal dark:text-cream sm:text-4xl">
+            <h2 className="mt-3 font-display text-3xl font-bold text-cream sm:text-4xl">
               Location & Hours
             </h2>
 
@@ -20,8 +20,8 @@ export default function Location() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-charcoal dark:text-cream">Address</h3>
-                  <p className="mt-1 text-charcoal/70 dark:text-cream/70">
+                  <h3 className="font-semibold text-cream">Address</h3>
+                  <p className="mt-1 text-cream/70">
                     {shopInfo.address}<br />{shopInfo.city}
                   </p>
                   <a
@@ -45,14 +45,14 @@ export default function Location() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-charcoal dark:text-cream">Phone</h3>
+                  <h3 className="font-semibold text-cream">Phone</h3>
                   <a
                     href={shopInfo.phoneLink}
                     className="mt-1 block text-lg font-semibold text-gold hover:text-gold-light"
                   >
                     {shopInfo.phone}
                   </a>
-                  <p className="text-sm text-charcoal/50 dark:text-cream/50">Tap to call</p>
+                  <p className="text-sm text-cream/50">Tap to call</p>
                 </div>
               </div>
 
@@ -63,10 +63,10 @@ export default function Location() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-charcoal dark:text-cream">Email</h3>
+                  <h3 className="font-semibold text-cream">Email</h3>
                   <a
                     href={shopInfo.emailLink}
-                    className="mt-1 block text-charcoal/70 hover:text-gold dark:text-cream/70"
+                    className="mt-1 block text-cream/70 hover:text-gold"
                   >
                     {shopInfo.email}
                   </a>
@@ -80,16 +80,16 @@ export default function Location() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-charcoal dark:text-cream">Hours</h3>
+                  <h3 className="font-semibold text-cream">Hours</h3>
                   <dl className="mt-2 space-y-1">
                     {shopInfo.hours.map((h) => (
                       <div key={h.days} className="flex justify-between gap-8 text-sm">
-                        <dt className="text-charcoal/70 dark:text-cream/70">{h.days}</dt>
-                        <dd className="font-medium text-charcoal dark:text-cream">{h.time}</dd>
+                        <dt className="text-cream/70">{h.days}</dt>
+                        <dd className="font-medium text-cream">{h.time}</dd>
                       </div>
                     ))}
                   </dl>
-                  <p className="mt-2 text-xs text-charcoal/50 dark:text-cream/50">
+                  <p className="mt-2 text-xs text-cream/50">
                     After-hours appointments: +$10
                   </p>
                 </div>
@@ -97,7 +97,7 @@ export default function Location() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-2xl border border-charcoal/10 dark:border-white/10">
+          <div className="overflow-hidden rounded-2xl border border-white/10">
             <iframe
               title="Nick's Barbershop location map"
               src="https://maps.google.com/maps?q=55-52+Myrtle+Ave,+Flushing,+NY+11385&output=embed"
