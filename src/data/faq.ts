@@ -52,7 +52,7 @@ export const shopInfo = {
   phoneLink: 'tel:+13472940492',
   email: 'INFO@nicksbarbershopny.com',
   emailLink: 'mailto:INFO@nicksbarbershopny.com',
-  instagram: 'https://www.instagram.com/nicksbarbershop/',
+  instagram: 'https://www.instagram.com/nicksbarbershops/',
   googlePlaceId: 'ChIJ88NpES9dwokR0DBSsSuBRYs',
   googleMaps:
     'https://www.google.com/maps/place/?q=place_id:ChIJ88NpES9dwokR0DBSsSuBRYs',
