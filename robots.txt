@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://astridbonoan.github.io/NicksBarbershop.io/sitemap.xml
