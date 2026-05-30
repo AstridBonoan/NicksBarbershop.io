@@ -46,7 +46,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
         aria-label="Main navigation"
       >
         <a href="#" className="shrink-0">
-          <img src={logoSrc} alt="Nick's Barber Shop" className="h-12 w-auto" />
+          <img src={logoSrc} alt="Nick's Barber Shop" className="h-12 w-12 rounded-full object-cover sm:h-14 sm:w-14" />
         </a>
 
         <ul className="hidden items-center gap-8 lg:flex">
