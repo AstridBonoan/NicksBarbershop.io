@@ -1,3 +1,6 @@
+const HERO_VIDEO =
+  'https://nicksbarbershopny.com/wp-content/uploads/2026/04/Visit-us-at-Nick-Barber-Shop-barbering-hairstylist-barbershop-barber-world-barberlife-barbe.mp4'
+
 interface HeroProps {
   onBookClick: () => void
 }
@@ -6,12 +9,17 @@ export default function Hero({ onBookClick }: HeroProps) {
   return (
     <section className="relative min-h-[100svh] overflow-hidden bg-charcoal" aria-label="Hero">
       <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1585747860715-2ba37c788f90?w=1920&h=1080&fit=crop"
-          alt="Nick's Barbershop interior with barbers at work"
-          className="h-full w-full object-cover opacity-40"
-          fetchPriority="high"
-        />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="h-full w-full object-cover opacity-50"
+          aria-hidden="true"
+        >
+          <source src={HERO_VIDEO} type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/70 to-charcoal/30" />
       </div>
 
