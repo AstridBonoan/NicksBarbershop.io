@@ -8,14 +8,14 @@ export default function About() {
           <div className="relative">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=400&h=500&fit=crop"
-                alt="Barbershop chairs and vintage mirrors"
+                src="https://nicksbarbershopny.com/wp-content/uploads/2022/10/about-img-2-2.jpg"
+                alt="Nick's Barbershop team at work"
                 className="rounded-2xl object-cover"
                 loading="lazy"
               />
               <img
-                src="https://images.unsplash.com/photo-1622288432456-1561289040366?w=400&h=500&fit=crop"
-                alt="Barber giving a precision haircut"
+                src="https://nicksbarbershopny.com/wp-content/uploads/2022/10/hero-img-3-1.jpg"
+                alt="Nick's Barbershop interior"
                 className="mt-8 rounded-2xl object-cover"
                 loading="lazy"
               />

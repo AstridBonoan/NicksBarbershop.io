@@ -7,60 +7,63 @@ export interface GalleryItem {
   category: Exclude<GalleryCategory, 'all'>
 }
 
+const img = (path: string) =>
+  `https://nicksbarbershopny.com/wp-content/uploads/${path}`
+
 export const galleryItems: GalleryItem[] = [
   {
     id: '1',
-    src: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&h=600&fit=crop',
-    alt: 'Fresh skin fade haircut',
+    src: img('2026/04/Haircut-done-by-bigraydabarber-at-the-wyckoff-location.jpg'),
+    alt: 'Fresh fade by Big Ray at Nick\'s Barbershop',
     category: 'fades',
   },
   {
     id: '2',
-    src: 'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&h=600&fit=crop',
-    alt: 'Barber at work on a client',
+    src: img('2026/04/download-4.jpg'),
+    alt: 'Precision haircut at Nick\'s Barbershop',
     category: 'modern',
   },
   {
     id: '3',
-    src: 'https://images.unsplash.com/photo-1585747860715-2ba37c788f90?w=600&h=600&fit=crop',
-    alt: 'Classic barbershop interior',
+    src: img('2022/10/hero-img-3-1.jpg'),
+    alt: 'Nick\'s Barbershop interior',
     category: 'interior',
   },
   {
     id: '4',
-    src: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=600&fit=crop',
-    alt: 'Precision beard shaping',
+    src: img('2026/04/download-20.jpg'),
+    alt: 'Clean lineup and beard work',
     category: 'beards',
   },
   {
     id: '5',
-    src: 'https://images.unsplash.com/photo-1622288432456-1561289040366?w=600&h=600&fit=crop',
-    alt: 'Modern styled haircut',
+    src: img('2026/04/638860063_18571967467037893_7217465911722088726_n.jpg'),
+    alt: 'Sharp modern cut at Nick\'s',
     category: 'modern',
   },
   {
     id: '6',
-    src: 'https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&h=600&fit=crop',
-    alt: "Classic gentleman's cut",
+    src: img('2026/04/download-22.jpg'),
+    alt: 'Classic gentleman\'s cut',
     category: 'classic',
   },
   {
     id: '7',
-    src: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=600&h=600&fit=crop',
+    src: img('2022/10/hero-img-3-2.jpg'),
     alt: 'Barbershop chairs and mirrors',
     category: 'interior',
   },
   {
     id: '8',
-    src: 'https://images.unsplash.com/photo-1593702274477-2c8720f86381?w=600&h=600&fit=crop',
+    src: img('2026/04/Gemini_Generated_Image_iu1le0iu1le0iu1l.png'),
     alt: 'Detailed fade line work',
     category: 'fades',
   },
   {
     id: '9',
-    src: 'https://images.unsplash.com/photo-1620331316778-6eaa9038f0a2?w=600&h=600&fit=crop',
-    alt: 'Beard trim and hot towel',
-    category: 'beards',
+    src: img('2022/10/hero-img-3-3.jpg'),
+    alt: 'Nick\'s Barbershop workspace',
+    category: 'interior',
   },
 ]
 
