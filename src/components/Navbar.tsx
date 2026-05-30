@@ -8,15 +8,11 @@ const navLinks = [
   { href: '#team', label: 'Team' },
   { href: '#gallery', label: 'Gallery' },
   { href: '#reviews', label: 'Reviews' },
-  { href: '#booking', label: 'Book' },
+  { href: shopInfo.bookingUrl, label: 'Book', external: true },
   { href: '#contact', label: 'Contact' },
 ]
 
-interface NavbarProps {
-  onBookClick: () => void
-}
-
-export default function Navbar({ onBookClick }: NavbarProps) {
+export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -55,9 +51,10 @@ export default function Navbar({ onBookClick }: NavbarProps) {
 
         <ul className="hidden items-center gap-8 lg:flex">
           {navLinks.map((link) => (
-            <li key={link.href}>
+            <li key={link.label}>
               <a
                 href={link.href}
+                {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 className="text-sm font-semibold text-cream [text-shadow:0_1px_4px_rgba(0,0,0,0.9)] transition-colors hover:text-gold"
               >
                 {link.label}
@@ -77,12 +74,14 @@ export default function Navbar({ onBookClick }: NavbarProps) {
             </svg>
           </a>
 
-          <button
-            onClick={onBookClick}
+          <a
+            href={shopInfo.bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden rounded-full bg-gold px-5 py-2 text-sm font-semibold text-charcoal transition-all hover:bg-gold-light sm:block"
           >
             Book Now
-          </button>
+          </a>
 
           <button
             onClick={() => setOpen(!open)}
@@ -111,9 +110,10 @@ export default function Navbar({ onBookClick }: NavbarProps) {
         >
           <ul className="flex flex-col px-4 py-6">
             {navLinks.map((link) => (
-              <li key={link.href}>
+              <li key={link.label}>
                 <a
                   href={link.href}
+                  {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                   onClick={closeMenu}
                   className="block border-b border-white/10 py-4 text-lg font-medium text-cream"
                 >
@@ -122,15 +122,15 @@ export default function Navbar({ onBookClick }: NavbarProps) {
               </li>
             ))}
             <li className="mt-6 flex flex-col gap-3">
-              <button
-                onClick={() => {
-                  closeMenu()
-                  onBookClick()
-                }}
+              <a
+                href={shopInfo.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={closeMenu}
                 className="w-full rounded-full bg-gold py-3.5 text-center font-semibold text-charcoal"
               >
                 Book Appointment
-              </button>
+              </a>
               <a
                 href={shopInfo.phoneLink}
                 className="w-full rounded-full border border-gold py-3.5 text-center font-semibold text-gold"

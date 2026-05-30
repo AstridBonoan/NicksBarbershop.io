@@ -1,10 +1,7 @@
 import { services } from '../data/services'
+import { shopInfo } from '../data/faq'
 
-interface ServicesProps {
-  onBookClick: (serviceId?: string) => void
-}
-
-export default function Services({ onBookClick }: ServicesProps) {
+export default function Services() {
   return (
     <section id="services" className="bg-charcoal-mid py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -37,12 +34,14 @@ export default function Services({ onBookClick }: ServicesProps) {
                   <p className="text-sm font-medium text-cream/80">{service.duration}</p>
                 </div>
               </div>
-              <button
-                onClick={() => onBookClick(service.id)}
-                className="mt-4 w-full rounded-full border border-gold/30 py-2.5 text-sm font-semibold text-gold transition-all group-hover:bg-gold group-hover:text-charcoal"
+              <a
+                href={shopInfo.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 block w-full rounded-full border border-gold/30 py-2.5 text-center text-sm font-semibold text-gold transition-all group-hover:bg-gold group-hover:text-charcoal"
               >
                 Book This Service
-              </button>
+              </a>
             </article>
           ))}
         </div>

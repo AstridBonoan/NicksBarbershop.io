@@ -1,10 +1,7 @@
 import { barbers } from '../data/team'
+import { shopInfo } from '../data/faq'
 
-interface TeamProps {
-  onBookClick: (serviceId?: string, barberId?: string) => void
-}
-
-export default function Team({ onBookClick }: TeamProps) {
+export default function Team() {
   return (
     <section id="team" className="bg-charcoal-light py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -53,12 +50,14 @@ export default function Team({ onBookClick }: TeamProps) {
                   <span className="text-xs font-medium text-cream/50">
                     {barber.experience}
                   </span>
-                  <button
-                    onClick={() => onBookClick(undefined, barber.id)}
+                  <a
+                    href={shopInfo.bookingUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="rounded-full bg-gold px-4 py-2 text-xs font-semibold text-charcoal transition-all hover:bg-gold-light"
                   >
                     Book with {barber.name.split(' ')[0]}
-                  </button>
+                  </a>
                 </div>
               </div>
             </article>

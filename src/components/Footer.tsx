@@ -38,13 +38,21 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-cream">Quick Links</h3>
             <ul className="mt-4 space-y-2">
-              {['About', 'Services', 'Team', 'Gallery', 'Reviews', 'Book'].map((link) => (
-                <li key={link}>
+              {[
+                { label: 'About', href: '#about' },
+                { label: 'Services', href: '#services' },
+                { label: 'Team', href: '#team' },
+                { label: 'Gallery', href: '#gallery' },
+                { label: 'Reviews', href: '#reviews' },
+                { label: 'Book', href: shopInfo.bookingUrl, external: true },
+              ].map((link) => (
+                <li key={link.label}>
                   <a
-                    href={`#${link.toLowerCase()}`}
+                    href={link.href}
+                    {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                     className="text-sm text-cream/60 transition-colors hover:text-gold"
                   >
-                    {link}
+                    {link.label}
                   </a>
                 </li>
               ))}

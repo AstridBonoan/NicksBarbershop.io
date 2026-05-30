@@ -61,6 +61,7 @@ export const shopInfo = {
   googleWriteReviewUrl:
     'https://search.google.com/local/writereview?placeid=ChIJ88NpES9dwokR0DBSsSuBRYs',
   googleProfileUrl: 'https://share.google/rOaiihMG6B8ww7NCN',
+  bookingUrl: 'https://getsquire.com/booking/brands/nicks-barbershop-965',
   directionsUrl:
     'https://www.google.com/maps/dir/?api=1&destination=55-52+Myrtle+Ave,+Flushing,+NY+11385',
   hours: [

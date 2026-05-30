@@ -3,11 +3,7 @@ import { shopInfo } from '../data/faq'
 const HERO_VIDEO =
   'https://nicksbarbershopny.com/wp-content/uploads/2026/04/Visit-us-at-Nick-Barber-Shop-barbering-hairstylist-barbershop-barber-world-barberlife-barbe.mp4'
 
-interface HeroProps {
-  onBookClick: () => void
-}
-
-export default function Hero({ onBookClick }: HeroProps) {
+export default function Hero() {
   return (
     <section className="relative min-h-[100svh] overflow-hidden bg-charcoal" aria-label="Hero">
       <div className="absolute inset-0">
@@ -42,12 +38,14 @@ export default function Hero({ onBookClick }: HeroProps) {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 opacity-0 animate-fade-up stagger-3 sm:flex-row sm:gap-4">
-            <button
-              onClick={onBookClick}
+            <a
+              href={shopInfo.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full bg-gold px-8 py-4 text-center font-semibold text-charcoal transition-all hover:bg-gold-light hover:shadow-lg hover:shadow-gold/20"
             >
               Book an Appointment
-            </button>
+            </a>
             <a
               href="#services"
               className="rounded-full border border-cream/30 px-8 py-4 text-center font-semibold text-cream transition-all hover:border-gold hover:text-gold"

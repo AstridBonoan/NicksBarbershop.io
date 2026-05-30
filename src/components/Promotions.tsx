@@ -1,8 +1,6 @@
-interface PromotionsProps {
-  onBookClick: () => void
-}
+import { shopInfo } from '../data/faq'
 
-export default function Promotions({ onBookClick }: PromotionsProps) {
+export default function Promotions() {
   const promos = [
     {
       title: 'New Client Special',
@@ -49,12 +47,14 @@ export default function Promotions({ onBookClick }: PromotionsProps) {
         </div>
 
         <div className="mt-8 text-center">
-          <button
-            onClick={onBookClick}
-            className="rounded-full bg-gold px-8 py-3 font-semibold text-charcoal transition-all hover:bg-gold-light"
+          <a
+            href={shopInfo.bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-full bg-gold px-8 py-3 font-semibold text-charcoal transition-all hover:bg-gold-light"
           >
             Claim Your Offer — Book Now
-          </button>
+          </a>
         </div>
       </div>
     </section>
