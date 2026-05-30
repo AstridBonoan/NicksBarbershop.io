@@ -1,4 +1,4 @@
-export type GalleryCategory = 'all' | 'fades' | 'beards' | 'modern' | 'classic' | 'interior'
+export type GalleryCategory = 'all' | 'fades' | 'beards' | 'modern' | 'classic'
 
 export interface GalleryItem {
   id: string
@@ -24,12 +24,6 @@ export const galleryItems: GalleryItem[] = [
     category: 'modern',
   },
   {
-    id: '3',
-    src: img('2022/10/hero-img-3-1.jpg'),
-    alt: 'Nick\'s Barbershop interior',
-    category: 'interior',
-  },
-  {
     id: '4',
     src: img('2026/04/download-20.jpg'),
     alt: 'Clean lineup and beard work',
@@ -48,22 +42,10 @@ export const galleryItems: GalleryItem[] = [
     category: 'classic',
   },
   {
-    id: '7',
-    src: img('2022/10/hero-img-3-2.jpg'),
-    alt: 'Barbershop chairs and mirrors',
-    category: 'interior',
-  },
-  {
     id: '8',
     src: img('2026/04/Gemini_Generated_Image_iu1le0iu1le0iu1l.png'),
     alt: 'Detailed fade line work',
     category: 'fades',
-  },
-  {
-    id: '9',
-    src: img('2022/10/hero-img-3-3.jpg'),
-    alt: 'Nick\'s Barbershop workspace',
-    category: 'interior',
   },
 ]
 
@@ -73,5 +55,4 @@ export const galleryFilters: { id: GalleryCategory; label: string }[] = [
   { id: 'beards', label: 'Beards' },
   { id: 'modern', label: 'Modern' },
   { id: 'classic', label: 'Classic' },
-  { id: 'interior', label: 'Shop' },
 ]
