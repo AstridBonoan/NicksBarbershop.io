@@ -37,8 +37,10 @@ export default function Navbar({ onBookClick }: NavbarProps) {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 bg-logo-bg transition-shadow duration-300 ${
-        scrolled ? 'shadow-md' : ''
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? 'bg-logo-bg/95 shadow-md backdrop-blur-md'
+          : 'bg-transparent'
       }`}
     >
       <nav
@@ -54,7 +56,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm font-medium text-cream/70 transition-colors hover:text-gold"
+                className="text-sm font-semibold text-cream [text-shadow:0_1px_4px_rgba(0,0,0,0.9)] transition-colors hover:text-gold"
               >
                 {link.label}
               </a>
@@ -65,7 +67,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
         <div className="flex items-center gap-2 sm:gap-3">
           <a
             href={shopInfo.phoneLink}
-            className="hidden rounded-full p-2 text-cream/70 transition-colors hover:bg-white/10 hover:text-cream sm:block"
+            className="hidden rounded-full p-2 text-cream [text-shadow:0_1px_4px_rgba(0,0,0,0.9)] transition-colors hover:bg-white/10 hover:text-gold sm:block"
             aria-label="Call us"
           >
             <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -82,7 +84,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
 
           <button
             onClick={() => setOpen(!open)}
-            className="rounded-lg p-2 text-cream lg:hidden"
+            className="rounded-lg p-2 text-cream [text-shadow:0_1px_4px_rgba(0,0,0,0.9)] lg:hidden"
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? 'Close menu' : 'Open menu'}
