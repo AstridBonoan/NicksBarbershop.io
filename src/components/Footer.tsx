@@ -9,7 +9,13 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <img src={logoSrc} alt="Nick's Barber Shop" className="h-20 w-20 rounded-full object-cover" />
+            <div className="h-20 w-20 overflow-hidden rounded-full">
+              <img
+                src={logoSrc}
+                alt="Nick's Barber Shop"
+                className="h-full w-full scale-[1.35] object-cover"
+              />
+            </div>
             <p className="mt-3 text-sm leading-relaxed text-cream/60">
               Elevating the art of grooming through precision techniques, timeless style,
               and a master&apos;s eye for detail.

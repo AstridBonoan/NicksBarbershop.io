@@ -45,8 +45,12 @@ export default function Navbar({ onBookClick }: NavbarProps) {
         className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8"
         aria-label="Main navigation"
       >
-        <a href="#" className="shrink-0">
-          <img src={logoSrc} alt="Nick's Barber Shop" className="h-12 w-12 rounded-full object-cover sm:h-14 sm:w-14" />
+        <a href="#" className="block h-12 w-12 shrink-0 overflow-hidden rounded-full sm:h-14 sm:w-14">
+          <img
+            src={logoSrc}
+            alt="Nick's Barber Shop"
+            className="h-full w-full scale-[1.35] object-cover"
+          />
         </a>
 
         <ul className="hidden items-center gap-8 lg:flex">
