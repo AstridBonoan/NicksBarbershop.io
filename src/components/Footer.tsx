@@ -88,12 +88,14 @@ export default function Footer() {
           <p className="text-xs text-cream/40">
             &copy; {currentYear} Nick&apos;s Barbershop. All rights reserved.
           </p>
-          <div className="flex items-center gap-2">
-            <span className="text-xs text-cream/40">Designed by</span>
+          <div className="flex flex-col items-end">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-cream/40">
+              Site by
+            </span>
             <img
               src={bonoanLabsLogoSrc}
               alt="Bonoan Labs"
-              className="h-5 w-auto rounded bg-white px-1.5 py-0.5"
+              className="mt-1 h-5 w-auto rounded bg-white px-1.5 py-0.5"
             />
           </div>
           <a
