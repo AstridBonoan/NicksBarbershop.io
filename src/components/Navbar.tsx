@@ -39,7 +39,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-logo-bg/95 shadow-md backdrop-blur-md'
+          ? 'bg-logo-bg shadow-md backdrop-blur-md'
           : 'bg-transparent'
       }`}
     >
