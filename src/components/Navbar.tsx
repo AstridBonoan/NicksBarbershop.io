@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { shopInfo } from '../data/faq'
+import { logoSrc } from '../data/site'
 
 const navLinks = [
   { href: '#about', label: 'About' },
@@ -44,11 +45,12 @@ export default function Navbar({ onBookClick }: NavbarProps) {
         className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8"
         aria-label="Main navigation"
       >
-        <a
-          href="#"
-          className="font-display text-xl font-bold tracking-tight text-cream sm:text-2xl"
-        >
-          Nick&apos;s<span className="text-gold">.</span>
+        <a href="#" className="shrink-0">
+          <img
+            src={logoSrc}
+            alt="Nick's Barber Shop"
+            className="h-12 w-auto sm:h-14"
+          />
         </a>
 
         <ul className="hidden items-center gap-8 lg:flex">

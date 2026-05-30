@@ -1,4 +1,5 @@
 import { shopInfo } from '../data/faq'
+import { logoSrc } from '../data/site'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -8,9 +9,11 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p className="font-display text-xl font-bold text-cream">
-              Nick&apos;s<span className="text-gold">.</span>
-            </p>
+            <img
+              src={logoSrc}
+              alt="Nick's Barber Shop"
+              className="h-20 w-auto"
+            />
             <p className="mt-3 text-sm leading-relaxed text-cream/60">
               Elevating the art of grooming through precision techniques, timeless style,
               and a master&apos;s eye for detail.
