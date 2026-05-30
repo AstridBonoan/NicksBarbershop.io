@@ -6,10 +6,9 @@
   --color-gold: #c9a962;
   --color-gold-light: #dfc88a;
   --color-gold-dark: #a88b4a;
-  --color-logo-bg: #1c2128;
-  --color-charcoal: #1c2128;
-  --color-charcoal-light: #1e232b;
-  --color-charcoal-mid: #1a1f26;
+  --color-charcoal: #0a0a0a;
+  --color-charcoal-light: #0a0a0a;
+  --color-charcoal-mid: #0a0a0a;
   --color-cream: #f5f0e8;
 }
 
@@ -19,7 +18,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-logo-bg);
+  background-color: var(--color-charcoal);
   color: var(--color-cream);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

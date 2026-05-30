@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { shopInfo } from '../data/faq'
-import Logo from './Logo'
+import { logoSrc } from '../data/site'
 
 const navLinks = [
   { href: '#about', label: 'About' },
@@ -38,9 +38,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-logo-bg shadow-md backdrop-blur-md'
-          : 'bg-transparent'
+        scrolled ? 'bg-charcoal' : 'bg-transparent'
       }`}
     >
       <nav
@@ -48,7 +46,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
         aria-label="Main navigation"
       >
         <a href="#" className="shrink-0">
-          <Logo />
+          <img src={logoSrc} alt="Nick's Barber Shop" className="h-12 w-auto" />
         </a>
 
         <ul className="hidden items-center gap-8 lg:flex">
@@ -105,7 +103,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
       {open && (
         <div
           id="mobile-menu"
-          className="fixed inset-0 top-[57px] z-40 bg-logo-bg lg:hidden"
+          className="fixed inset-0 top-[57px] z-40 bg-charcoal lg:hidden"
         >
           <ul className="flex flex-col px-4 py-6">
             {navLinks.map((link) => (

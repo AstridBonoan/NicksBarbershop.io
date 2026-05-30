@@ -9,7 +9,7 @@ interface HeroProps {
 
 export default function Hero({ onBookClick }: HeroProps) {
   return (
-    <section className="relative min-h-[100svh] overflow-hidden bg-logo-bg" aria-label="Hero">
+    <section className="relative min-h-[100svh] overflow-hidden bg-charcoal" aria-label="Hero">
       <div className="absolute inset-0">
         <video
           autoPlay
@@ -22,7 +22,7 @@ export default function Hero({ onBookClick }: HeroProps) {
         >
           <source src={HERO_VIDEO} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-logo-bg via-logo-bg/70 to-logo-bg/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/70 to-charcoal/30" />
       </div>
 
       <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-4 pb-24 pt-32 sm:px-6 sm:pb-32 lg:px-8">

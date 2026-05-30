@@ -1,15 +1,15 @@
 import { shopInfo } from '../data/faq'
-import Logo from './Logo'
+import { logoSrc } from '../data/site'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-logo-bg py-12">
+    <footer className="bg-charcoal py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Logo className="h-24 w-24" />
+            <img src={logoSrc} alt="Nick's Barber Shop" className="h-16 w-auto" />
             <p className="mt-3 text-sm leading-relaxed text-cream/60">
               Elevating the art of grooming through precision techniques, timeless style,
               and a master&apos;s eye for detail.
