@@ -53,7 +53,14 @@ export const shopInfo = {
   email: 'INFO@nicksbarbershopny.com',
   emailLink: 'mailto:INFO@nicksbarbershopny.com',
   instagram: 'https://www.instagram.com/nicksbarbershop/',
-  googleMaps: 'https://maps.google.com/?q=55-52+Myrtle+Ave,+Flushing,+NY+11385',
+  googlePlaceId: 'ChIJ88NpES9dwokR0DBSsSuBRYs',
+  googleMaps:
+    'https://www.google.com/maps/place/?q=place_id:ChIJ88NpES9dwokR0DBSsSuBRYs',
+  googleReviewsUrl:
+    'https://search.google.com/local/reviews?placeid=ChIJ88NpES9dwokR0DBSsSuBRYs',
+  googleWriteReviewUrl:
+    'https://search.google.com/local/writereview?placeid=ChIJ88NpES9dwokR0DBSsSuBRYs',
+  googleProfileUrl: 'https://share.google/rOaiihMG6B8ww7NCN',
   directionsUrl:
     'https://www.google.com/maps/dir/?api=1&destination=55-52+Myrtle+Ave,+Flushing,+NY+11385',
   hours: [
