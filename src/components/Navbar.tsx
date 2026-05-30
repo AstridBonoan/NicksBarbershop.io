@@ -38,10 +38,8 @@ export default function Navbar({ onBookClick }: NavbarProps) {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-white/95 shadow-sm backdrop-blur-md dark:bg-charcoal/95'
-          : 'bg-transparent'
+      className={`fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-charcoal/95 shadow-sm backdrop-blur-md transition-all duration-300 ${
+        scrolled ? 'shadow-md' : ''
       }`}
     >
       <nav
@@ -50,7 +48,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
       >
         <a
           href="#"
-          className="font-display text-xl font-bold tracking-tight text-charcoal dark:text-cream sm:text-2xl"
+          className="font-display text-xl font-bold tracking-tight text-cream sm:text-2xl"
         >
           Nick&apos;s<span className="text-gold">.</span>
         </a>
@@ -60,7 +58,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm font-medium text-charcoal/70 transition-colors hover:text-gold dark:text-cream/70 dark:hover:text-gold"
+                className="text-sm font-medium text-cream/70 transition-colors hover:text-gold"
               >
                 {link.label}
               </a>
@@ -71,7 +69,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
         <div className="flex items-center gap-2 sm:gap-3">
           <button
             onClick={toggleTheme}
-            className="rounded-full p-2 text-charcoal/70 transition-colors hover:bg-charcoal/5 dark:text-cream/70 dark:hover:bg-white/10"
+            className="rounded-full p-2 text-cream/70 transition-colors hover:bg-white/10 hover:text-cream"
             aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
           >
             {theme === 'dark' ? (
@@ -87,7 +85,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
 
           <a
             href={shopInfo.phoneLink}
-            className="hidden rounded-full p-2 text-charcoal/70 transition-colors hover:bg-charcoal/5 dark:text-cream/70 dark:hover:bg-white/10 sm:block"
+            className="hidden rounded-full p-2 text-cream/70 transition-colors hover:bg-white/10 hover:text-cream sm:block"
             aria-label="Call us"
           >
             <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -104,7 +102,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
 
           <button
             onClick={() => setOpen(!open)}
-            className="rounded-lg p-2 text-charcoal dark:text-cream lg:hidden"
+            className="rounded-lg p-2 text-cream lg:hidden"
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? 'Close menu' : 'Open menu'}
