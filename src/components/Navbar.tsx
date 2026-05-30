@@ -37,7 +37,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-charcoal/95 shadow-sm backdrop-blur-md transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 bg-logo-bg transition-shadow duration-300 ${
         scrolled ? 'shadow-md' : ''
       }`}
     >
@@ -103,7 +103,7 @@ export default function Navbar({ onBookClick }: NavbarProps) {
       {open && (
         <div
           id="mobile-menu"
-          className="fixed inset-0 top-[57px] z-40 bg-charcoal lg:hidden"
+          className="fixed inset-0 top-[57px] z-40 bg-logo-bg lg:hidden"
         >
           <ul className="flex flex-col px-4 py-6">
             {navLinks.map((link) => (
