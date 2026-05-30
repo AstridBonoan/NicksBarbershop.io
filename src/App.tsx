@@ -12,6 +12,7 @@ import Loyalty from './components/Loyalty'
 import Promotions from './components/Promotions'
 import Footer from './components/Footer'
 import StickyBookButton from './components/StickyBookButton'
+import Watermark from './components/Watermark'
 
 export default function App() {
   return (
@@ -41,6 +42,7 @@ export default function App() {
 
       <Footer />
       <StickyBookButton />
+      <Watermark />
 
       <div className="h-20 sm:hidden" aria-hidden="true" />
     </div>

@@ -1,5 +1,5 @@
 import { shopInfo } from '../data/faq'
-import { logoSrc } from '../data/site'
+import { logoSrc, bonoanLabsLogoSrc } from '../data/site'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -88,6 +88,14 @@ export default function Footer() {
           <p className="text-xs text-cream/40">
             &copy; {currentYear} Nick&apos;s Barbershop. All rights reserved.
           </p>
+          <div className="flex items-center gap-2">
+            <span className="text-xs text-cream/40">Designed by</span>
+            <img
+              src={bonoanLabsLogoSrc}
+              alt="Bonoan Labs"
+              className="h-5 w-auto rounded bg-white px-1.5 py-0.5"
+            />
+          </div>
           <a
             href={shopInfo.instagram}
             target="_blank"
